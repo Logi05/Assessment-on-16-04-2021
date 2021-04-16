@@ -13,14 +13,14 @@ public class RevArrayList {
 		list.add(4);
 		list.add(5);
 		
-		System.out.println("Before Reverse");
+		System.out.println("Before Reversing");
 		Iterator<Integer> it=list.iterator();
 		while(it.hasNext())
 		{
 			System.out.println(it.next());
 		}
 		
-		System.out.println("After Reverse");
+		System.out.println("After Reversing");
 		Collections.reverse(list);
 		//System.out.println(list);
 		for(Integer i:list)
