@@ -7,20 +7,32 @@ public class MaxOccurence {
 		System.out.println("Enter a String:");
 		Scanner sc=new Scanner(System.in);
 		String str=sc.nextLine();
-		int s[]=new int[256];
-		for(int i=0;i<str.length();i++)
-			s[str.charAt(i)]++;
-		int max=-1;
-		char result=' ';
-		for(int i=0;i<str.length();i++)
+		int f[]=new int[str.length()];
+		char max=str.charAt(0);
+		int i,j,max1;
+		char string[]=str.toCharArray();
+		for(i=0;i<string.length;i++)
 		{
-			if(max<s[str.charAt(i)])
+			f[i]=1;
+			for(j=i+1;j<string.length;j++)
 			{
-				max=s[str.charAt(i)];
-				result=str.charAt(i);
+				if(string[i]==string[j] && string[i]!=' ' && string[i]!='0')
+				{
+					f[i]++;
+					string[j]='0';
+				}
 			}
-		}			
-				System.out.println(result);
+		}
+		max1=f[0];
+		for(i=0;i<f.length;i++)
+		{
+			if(max1<f[i])
+			{
+				max1=f[i];
+				max=string[i];
+			}
+		}
+		System.out.println("Minimum Occurence of Character :"+max);		
 	}		
 }
 
