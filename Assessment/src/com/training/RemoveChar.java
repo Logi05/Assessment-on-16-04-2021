@@ -23,7 +23,7 @@ public class RemoveChar {
 				j++;
 			}
 		}
-		a1[j]='\0';
+		//a1[j]='\0';
 		System.out.println(a1);
 	}	
 }
