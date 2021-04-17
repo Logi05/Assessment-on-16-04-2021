@@ -33,7 +33,7 @@ public class MaxMinChar {
 				max=string[i];
 			}
 		}
-		System.out.println(min);
-		System.out.println(max);
+		System.out.println("Minimum Occurence Of Character: "+min);
+		System.out.println("Maximum Occurence Of Character: "+max);
 	}
 }
