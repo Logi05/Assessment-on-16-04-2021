@@ -8,8 +8,8 @@ public class TraverseArrayList {
 	public static void main(String[] args) {
 		ArrayList<String> list=(ArrayList<String>)Stream.of("Ram","Logi","Priya").collect(Collectors.toList());
 		list.stream()
-				.forEach((a) -> {
-					System.out.println(a+" ");
-				});
+		    .forEach((a) -> {
+			System.out.println(a+" ");
+		     });
 	}
 }
