@@ -24,6 +24,7 @@ public class RemoveChar {
 			}
 		}
 		//a1[j]='\0';
+		System.out.println("After Removing "+c+" Character:");
 		System.out.println(a1);
 	}	
 }
